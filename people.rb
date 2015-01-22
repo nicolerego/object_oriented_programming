@@ -30,3 +30,10 @@ chris.greeting
 #7
 christina = Student.new("Christina")
 christina.greeting
+
+#8 
+chris.teach
+christina.learn
+
+# Calling teach method on student instance doesnt work 
+# because method is outside of class
