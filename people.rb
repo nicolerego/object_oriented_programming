@@ -1,3 +1,15 @@
+#4 
+class Person
+	attr_accessor :name
+	def initialize(name)
+		@name = name	
+	end
+	#5
+	def greeting
+		puts "Hi, my name is #{name}!"
+	end
+end 
+
 #1-3
 class Student < Person
 	def learn
