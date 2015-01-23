@@ -63,9 +63,12 @@ rover_one = Rover.new(first_rover[0].to_i, first_rover[2].to_i, first_rover[4].u
 puts "Please enter a series of instructions (M for move, L for left, R for right) for the first rover"
 rover_one.read_instruction(gets.chomp.upcase)
 
-#Get location of second rover
+puts "Please enter the coordinates and direction of the second rover (format: x y N/E/S/W)"
+second_rover = gets.chomp
+rover_two = Rover.new(second_rover[0].to_i, second_rover[2].to_i, second_rover[4].upcase)
 
-#Get instructions for second rover
+puts "Please enter a series of instructions (M for move, L for left, R for right) for the second rover"
+rover_two.read_instruction(gets.chomp.upcase)
 
 puts rover_one
-#Puts second rover
+puts rover_two
